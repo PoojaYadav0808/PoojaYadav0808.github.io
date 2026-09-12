@@ -1,138 +1,581 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Pooja Yadav — Java Backend Developer portfolio">
+
+  <meta name="description"
+        content="Pooja Yadav — Java Backend Developer portfolio">
+
   <title>Pooja Yadav | Java Developer</title>
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
+
+
 <body>
+
+  <!-- ================= NAVIGATION ================= -->
+
   <header class="nav">
-    <a class="logo" href="#home">PY<span>.</span></a>
-    <button class="menu" aria-label="Toggle navigation">☰</button>
+
+    <a class="logo" href="#home">
+      PY<span>.</span>
+    </a>
+
+    <button class="menu" aria-label="Toggle navigation">
+      ☰
+    </button>
+
     <nav id="navLinks">
+
       <a href="#about">About</a>
+
       <a href="#skills">Skills</a>
+
       <a href="#projects">Projects</a>
+
       <a href="#contact">Contact</a>
+
     </nav>
+
   </header>
 
-  <main>
-    <section id="home" class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">JAVA • SPRING BOOT • BACKEND</p>
-        <h1>Hi, I'm <span>Pooja Yadav</span>.</h1>
-        <h2>Java Developer building reliable backend applications.</h2>
-        <p class="intro">
-          B.Tech graduate in Electronics & Communication Engineering with hands-on experience
-          in Java, Spring Boot, Hibernate, JPA, SQL and PostgreSQL.
-        </p>
-        <div class="actions">
-          <a class="btn primary" href="#projects">View Projects</a>
-          <a class="btn secondary" href="assets/Pooja-Yadav-Resume.pdf" download>Download Resume</a>
-        </div>
-        <div class="socials">
-          <a href="https://www.linkedin.com/in/poojayadav08" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-          <a href="https://github.com/PoojaYadav0808" target="_blank" rel="noreferrer">GitHub ↗</a>
-          <a href="mailto:aec.ece.poojayadav.2026.074@gmail.com">Email ↗</a>
-        </div>
-      </div>
-      <div class="hero-card">
-        <div class="code-window">
-          <div class="dots"><i></i><i></i><i></i></div>
-          <pre><code><span class="pink">public class</span> <span class="blue">Developer</span> {
-  <span class="pink">String</span> name = <span class="green">"Pooja"</span>;
-  <span class="pink">String</span> focus = <span class="green">"Java Backend"</span>;
 
-  <span class="pink">void</span> build() {
-    <span class="blue">SpringBoot</span>.run();
-    <span class="blue">APIs</span>.create();
-    <span class="blue">SQL</span>.query();
-  }
-}</code></pre>
+  <!-- ================= MAIN ================= -->
+
+  <main>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section id="home" class="hero">
+
+      <!-- LEFT SIDE -->
+
+      <div class="hero-copy">
+
+        <p class="eyebrow">
+          JAVA • SPRING BOOT • BACKEND
+        </p>
+
+
+        <h1>
+          Hi, I'm <span>Pooja Yadav</span>.
+        </h1>
+
+
+        <h2>
+          Java Developer building reliable backend applications.
+        </h2>
+
+
+        <p class="intro">
+
+          B.Tech graduate in Electronics & Communication Engineering
+          with hands-on experience in Java, Spring Boot, Hibernate,
+          JPA, SQL and PostgreSQL.
+
+        </p>
+
+
+        <!-- BUTTONS -->
+
+        <div class="actions">
+
+          <a class="btn primary" href="#projects">
+            View Projects
+          </a>
+
+
+          <a class="btn secondary"
+             href="assets/Pooja-Yadav-Resume.pdf"
+             download>
+
+            Download Resume
+
+          </a>
+
         </div>
+
+
+        <!-- SOCIAL LINKS -->
+
+        <div class="socials">
+
+          <a href="https://www.linkedin.com/in/poojayadav08"
+             target="_blank"
+             rel="noreferrer">
+
+            LinkedIn ↗
+
+          </a>
+
+
+          <a href="https://github.com/PoojaYadav0808"
+             target="_blank"
+             rel="noreferrer">
+
+            GitHub ↗
+
+          </a>
+
+
+          <a href="mailto:aec.ece.poojayadav.2026.074@gmail.com">
+
+            Email ↗
+
+          </a>
+
+        </div>
+
       </div>
+
+
+      <!-- ================= PROFILE PHOTO ================= -->
+
+      <div class="hero-card">
+
+        <div class="profile-photo">
+
+          <img
+            src="assets/poojaphoto.jpeg"
+            alt="Pooja Yadav - Java Developer"
+          >
+
+        </div>
+
+      </div>
+
     </section>
+
+
+
+    <!-- ================= ABOUT ================= -->
 
     <section id="about" class="section split">
+
       <div>
-        <p class="eyebrow">01 — ABOUT ME</p>
-        <h2>Turning Java fundamentals into useful software.</h2>
+
+        <p class="eyebrow">
+          01 — ABOUT ME
+        </p>
+
+        <h2>
+          Turning Java fundamentals into useful software.
+        </h2>
+
       </div>
+
+
       <div class="text">
-        <p>I have a strong foundation in Object-Oriented Programming, exception handling, JDBC and database concepts, with a keen interest in Java backend development and building reliable software applications.</p>
-        <p>My recent work includes a RESTful Employee Management System using Spring Boot, Spring Data JPA, Hibernate and PostgreSQL, plus a Core Java/JDBC Car Rental Management System.</p>
+
+        <p>
+
+          I have a strong foundation in Object-Oriented Programming,
+          exception handling, JDBC and database concepts, with a keen
+          interest in Java backend development and building reliable
+          software applications.
+
+        </p>
+
+
+        <p>
+
+          My recent work includes a RESTful Employee Management System
+          using Spring Boot, Spring Data JPA, Hibernate and PostgreSQL,
+          plus a Core Java/JDBC Car Rental Management System.
+
+        </p>
+
+
         <div class="facts">
-          <div><strong>B.Tech</strong><span>Electronics & Communication Engineering</span></div>
-          <div><strong>Focus</strong><span>Java Backend Development</span></div>
-          <div><strong>Based in</strong><span>Asansol, India</span></div>
+
+          <div>
+
+            <strong>B.Tech</strong>
+
+            <span>
+              Electronics & Communication Engineering
+            </span>
+
+          </div>
+
+
+          <div>
+
+            <strong>Focus</strong>
+
+            <span>
+              Java Backend Development
+            </span>
+
+          </div>
+
+
+          <div>
+
+            <strong>Based in</strong>
+
+            <span>
+              Asansol, India
+            </span>
+
+          </div>
+
         </div>
+
       </div>
+
     </section>
+
+
+
+    <!-- ================= SKILLS ================= -->
 
     <section id="skills" class="section">
-      <p class="eyebrow">02 — TECHNICAL SKILLS</p>
-      <h2>Tools I work with</h2>
+
+      <p class="eyebrow">
+        02 — TECHNICAL SKILLS
+      </p>
+
+
+      <h2>
+        Tools I work with
+      </h2>
+
+
       <div class="skill-grid">
-        <div class="skill"><b>Java</b><span>OOP • Exception Handling • JDBC</span></div>
-        <div class="skill"><b>Spring Boot</b><span>REST APIs • Layered Architecture</span></div>
-        <div class="skill"><b>Hibernate / JPA</b><span>ORM • Spring Data JPA</span></div>
-        <div class="skill"><b>Databases</b><span>PostgreSQL • MySQL • SQL</span></div>
-        <div class="skill"><b>Web</b><span>HTML • CSS</span></div>
-        <div class="skill"><b>Development</b><span>CRUD • Validation • Database Concepts</span></div>
+
+
+        <div class="skill">
+
+          <b>Java</b>
+
+          <span>
+            OOP • Exception Handling • JDBC
+          </span>
+
+        </div>
+
+
+        <div class="skill">
+
+          <b>Spring Boot</b>
+
+          <span>
+            REST APIs • Layered Architecture
+          </span>
+
+        </div>
+
+
+        <div class="skill">
+
+          <b>Hibernate / JPA</b>
+
+          <span>
+            ORM • Spring Data JPA
+          </span>
+
+        </div>
+
+
+        <div class="skill">
+
+          <b>Databases</b>
+
+          <span>
+            PostgreSQL • MySQL • SQL
+          </span>
+
+        </div>
+
+
+        <div class="skill">
+
+          <b>Web</b>
+
+          <span>
+            HTML • CSS
+          </span>
+
+        </div>
+
+
+        <div class="skill">
+
+          <b>Development</b>
+
+          <span>
+            CRUD • Validation • Database Concepts
+          </span>
+
+        </div>
+
+
       </div>
+
     </section>
+
+
+
+    <!-- ================= PROJECTS ================= -->
 
     <section id="projects" class="section projects">
-      <p class="eyebrow">03 — PROJECTS</p>
-      <h2>Selected work</h2>
+
+      <p class="eyebrow">
+        03 — PROJECTS
+      </p>
+
+
+      <h2>
+        Selected work
+      </h2>
+
+
+      <!-- PROJECT 1 -->
 
       <article class="project-card featured">
-        <div class="project-number">01</div>
-        <div class="project-body">
-          <p class="tag">SPRING BOOT / REST API</p>
-          <h3>Employee Management System</h3>
-          <p>RESTful employee management application with CRUD operations, PostgreSQL persistence and a layered Controller, Service, Repository and Entity architecture.</p>
-          <div class="tech"><span>Java</span><span>Spring Boot</span><span>JPA</span><span>Hibernate</span><span>PostgreSQL</span></div>
-          <a class="project-link" href="https://github.com/PoojaYadav0808/employee-management-system" target="_blank" rel="noreferrer">View on GitHub ↗</a>
+
+        <div class="project-number">
+          01
         </div>
+
+
+        <div class="project-body">
+
+          <p class="tag">
+            SPRING BOOT / REST API
+          </p>
+
+
+          <h3>
+            Employee Management System
+          </h3>
+
+
+          <p>
+
+            RESTful employee management application with CRUD
+            operations, PostgreSQL persistence and a layered
+            Controller, Service, Repository and Entity architecture.
+
+          </p>
+
+
+          <div class="tech">
+
+            <span>Java</span>
+
+            <span>Spring Boot</span>
+
+            <span>JPA</span>
+
+            <span>Hibernate</span>
+
+            <span>PostgreSQL</span>
+
+          </div>
+
+
+          <a class="project-link"
+             href="https://github.com/PoojaYadav0808/employee-management-system"
+             target="_blank"
+             rel="noreferrer">
+
+            View on GitHub ↗
+
+          </a>
+
+        </div>
+
       </article>
+
+
+
+      <!-- PROJECT 2 -->
 
       <article class="project-card">
-        <div class="project-number">02</div>
-        <div class="project-body">
-          <p class="tag">CORE JAVA / JDBC</p>
-          <h3>Car Rental Management System</h3>
-          <p>Console-based application for vehicle and rental operations, including car CRUD, rental/return functionality, availability tracking and bill calculation.</p>
-          <div class="tech"><span>Core Java</span><span>JDBC</span><span>MySQL</span><span>SQL</span></div>
+
+        <div class="project-number">
+          02
         </div>
+
+
+        <div class="project-body">
+
+          <p class="tag">
+            CORE JAVA / JDBC
+          </p>
+
+
+          <h3>
+            Car Rental Management System
+          </h3>
+
+
+          <p>
+
+            Console-based application for vehicle and rental
+            operations, including car CRUD, rental/return
+            functionality, availability tracking and bill calculation.
+
+          </p>
+
+
+          <div class="tech">
+
+            <span>Core Java</span>
+
+            <span>JDBC</span>
+
+            <span>MySQL</span>
+
+            <span>SQL</span>
+
+          </div>
+
+        </div>
+
       </article>
+
     </section>
+
+
+
+    <!-- ================= CREDENTIALS ================= -->
 
     <section class="section credentials">
-      <div class="credential"><span>Certification</span><strong>TCS iON Career Edge – Young Professional</strong></div>
-      <div class="credential"><span>Achievement</span><strong>2nd Position — Debate Competition</strong></div>
-      <div class="credential"><span>Strengths</span><strong>Leadership • Teamwork • Problem Solving</strong></div>
+
+
+      <div class="credential">
+
+        <span>
+          Certification
+        </span>
+
+        <strong>
+          TCS iON Career Edge – Young Professional
+        </strong>
+
+      </div>
+
+
+      <div class="credential">
+
+        <span>
+          Achievement
+        </span>
+
+        <strong>
+          2nd Position — Debate Competition
+        </strong>
+
+      </div>
+
+
+      <div class="credential">
+
+        <span>
+          Strengths
+        </span>
+
+        <strong>
+          Leadership • Teamwork • Problem Solving
+        </strong>
+
+      </div>
+
+
     </section>
+
+
+
+    <!-- ================= CONTACT ================= -->
 
     <section id="contact" class="section contact">
-      <p class="eyebrow">04 — LET'S CONNECT</p>
-      <h2>Have an opportunity in Java development?</h2>
-      <p>I'm interested in entry-level opportunities where I can contribute, learn and grow as a backend developer.</p>
-      <a class="email" href="mailto:aec.ece.poojayadav.2026.074@gmail.com">aec.ece.poojayadav.2026.074@gmail.com</a>
+
+
+      <p class="eyebrow">
+        04 — LET'S CONNECT
+      </p>
+
+
+      <h2>
+        Have an opportunity in Java development?
+      </h2>
+
+
+      <p>
+
+        I'm interested in entry-level opportunities where I can
+        contribute, learn and grow as a backend developer.
+
+      </p>
+
+
+      <a class="email"
+         href="mailto:aec.ece.poojayadav.2026.074@gmail.com">
+
+        aec.ece.poojayadav.2026.074@gmail.com
+
+      </a>
+
+
       <div class="actions">
-        <a class="btn primary" href="https://www.linkedin.com/in/poojayadav08" target="_blank" rel="noreferrer">Connect on LinkedIn</a>
-        <a class="btn secondary" href="https://github.com/PoojaYadav0808" target="_blank" rel="noreferrer">GitHub Profile</a>
+
+
+        <a class="btn primary"
+           href="https://www.linkedin.com/in/poojayadav08"
+           target="_blank"
+           rel="noreferrer">
+
+          Connect on LinkedIn
+
+        </a>
+
+
+        <a class="btn secondary"
+           href="https://github.com/PoojaYadav0808"
+           target="_blank"
+           rel="noreferrer">
+
+          GitHub Profile
+
+        </a>
+
+
       </div>
+
     </section>
+
   </main>
 
-  <footer>© 2026 Pooja Yadav · Built with HTML, CSS & JavaScript</footer>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer>
+
+    © 2026 Pooja Yadav · Built with HTML, CSS & JavaScript
+
+  </footer>
+
+
+  <!-- JavaScript -->
+
   <script src="script.js"></script>
+
 </body>
+
 </html>
